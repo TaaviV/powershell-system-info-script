@@ -1,9 +1,19 @@
-#Praktikum 13: Windows skriptimine (powershell)
+#Windows System Information Script (Powershell)
 
-Selles praktikumis lõin esimese Powershell skripti. Lugesin Powershelli kohta ning õppisin käske.
+This project is a system information tool that collects and displays detailed information about Windows machine. The project is based on Powershell and demonstrates practical usage of system-level scripting, object filtering and structured output formatting.
+
+The script gathers:
+
+- Operating system details;
+- PowerShell version;
+- Network configuration;
+- CPU and RAM information;
+- GPU and driver details;
+- Disk information;
+- Local user accounts;
+- Running processes;
 
 ```powershell
-. . C:\Users\taavivahi\Desktop\opsys\praks13\alus.ps1
 
 $algusAeg = Get-Date # Määrab skripti algusaja
 Valjasta 0 "ALGUS" ("Aeg: " + $algusAeg.ToString("dddd MM/dd/yyyy HH:mm K")) # Kuvab
